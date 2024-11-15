@@ -1,0 +1,209 @@
+                                    TODO
+                      //Capstone Setup Instructions//
+
+For this capstone you should create a public GitHub repo for this Capstone
+project. Make sure that the capstone repo has a meaningful name, like DELI-cious
+
+         "(DO NOT just give it a generic name like capstone-2)"
+
+
+
+Clone the TODO DELI-cious repo into the C:/pluralsight folder. To ensure you have the ability to push changes.
+Create a GitHub project board to manage your work.
+Use the project requirements to create user stories on your board so that you can manage your time throughout the project.
+Be sure to read all project requirements before beginning to code.
+
+Capstone Description
+This project is the point of sales application for DELI-cious, a custom sandwich shop.
+Currently at DELI-cious our customers can fully customize their sandwich orders.
+Until recently we have been managing all orders in person and are currently taking all orders on paper.
+But our business is growing, and we need a way to automate the order process (and eventually even make it available online).
+
+This application should take full advantage of Object Oriented Analysis and Design.
+In other words you should make use of OOP concepts throughout this process.
+Create classes and interfaces as necessary to build this solution.
+As you begin this project you should start by creating a class diagram of the classes, interfaces that you will need.
+This will be your starting point, and it may change as your application progresses throughout the week.
+You should keep your diagram current.
+You should also save the diagram to your repository.
+HINT: Use the requirements below to look for nouns and verbs to help you create your class diagram.
+
+Part 2.)               TODO //Application Requirements//
+
+The sandwich is the core of our business.
+Customers can order sandwiches in 3 sizes (4", 8" and 12").
+ When they order, they choose the type of bread that they would like (white, wheat, rye, or wrap).
+The customer can then choose their toppings.
+ Toppings are categorized as regular and premium.
+Meats and cheeses are premium toppings, but most other toppings are considered regular.
+Customers can request for extra toppings, but premium toppings come at an additional cost.
+Each sandwich can also be toasted.
+A customer can place an order with 1 or more sandwiches on the order.
+When a customer places the order, they should be prompted to customize each sandwich one at a time.
+A customer should also be able to add drinks and chips to their order.
+When they have completed their order, the application should display the order details, including the list of sandwiches
+that were ordered with all of the toppings so that the customer can verify that the order is correct.
+The screen should also display the total cost of the order.
+
+When the customer completes the order, the order details should be saved to a receipts folder.
+ Each order should have it's own receipt file, and it should be
+named by the date and time that the order was placed (yyyyMMdd-hhmmss.txt
+- i.e. 20230329-121523.txt)
+
+--
+Chart example look in workbook to see...
+--
+                         TODO //Home Screen//
+Your application must include several screens with the listed features in order to
+                     be considered complete:
+
+o The home screen should give the user the following options. The
+application should continue to run until the user chooses to exit.
+§ 1) New Order
+§ 0) Exit - exit the application
+• Order Screen - All entries should show the newest entries first
+o 1) Add Sandwich
+o 2) Add Drink
+o 3) Add Chips
+o 4) Checkout
+o 0) Cancel Order - delete the order and go back to the home page
+• Add Sandwich - the add sandwich screen will walk the user through
+several options to create the sandwich
+o Select your bread:
+o Sandwich sizes: 4", 8" and 12"
+o Toppings: - the user should be able to add extras of each topping
+§ Meat:
+§ Cheese:
+§ Other toppings:
+§ Select sauces:
+o Would you like the sandwich toasted?
+• Add Drink - TODO select drink size and flavors
+• Add Chips - TODO select chip type and flavors
+• Checkout - display the order details and the price
+o Confirm - create the receipt file and go back to the home screen
+o Cancel - delete order and go back to the home screen
+
+               (Optional Bonus) Challenge Yourself
+If you have time and want to challenge yourself, consider the following:
+Create several Signature Sandwiches that are a template for what the customer
+can order. The customer could then customize the existing toppings to either
+remove or add more toppings to the sandwich.
+HINT: Signature Sandwiches could be managed by creating custom classes that
+inherit from the Sandwich class.
+Signature Sandwiches might include:
+o Bacon
+o extra Cheese
+o Lettuce
+o BBQ
+o Ranch
+o Toasted
+o Fries
+o Mayo
+o Toasted
+
+                         //Other General Project Requirements//
+                    Your project must also meet the following requirements:
+Repository
+• Your code must be in a public GitHub repository
+• You must use Git branches appropriately
+• The repository must contain an appropriate Git commit history
+o Minimally, you should have a commit for each meaningful piece of work completed
+• It must contain an informative README file that:
+o Describes your project
+o Includes images of your application screens
+o Describes/shows one interesting piece of code from your project
+• Include exports or screenshots of your "TODO diagrams Class Demonstrations.
+
+Each student will be given 10 minutes to demonstrate their project to the class on "project demonstration day".
+ During this time you will:
+• Present your application - run through the different screens and scenarios
+• Describe / show one interesting piece of code that you wrote
+• Answer questions from the audience if time permits
+------------------------------------------------------------------------------------------------------------------------------------
+                                       //Misc//
+                                //TODO: Food Listings
+                                      Layout Plan
+//1.)                            //:Sandwich Class://
+For the code above do the exact same thing but make sure to add these three additional sandwiches to the mix "Mushroom Melt Smash burger",
+"Smoked Breakfast Chorizo", and the "Butter Burger". All of these should cost $10:00.
+Each with the option no matter the sandwich chosen to be able too choose out of these three bread types...
+"Brioche","French Baguette", and "Ciabatta".
+All of the bread types should cost $1:50.
+
+ //2.)                            //:Chips://
+Same for the chips do the exact same thing but make sure to add my three additional flavors to each chip brand for example...
+"Vitner's", as a chip brand should come in these three flavors: Hot Crunchy Curls, Hot Cheese & Lime, and Extra Cheesy.
+"Sun Chips", as a chip brand should come in these three flavors: Original, French Onion, Harvest Cheddar.
+"Clancy's Kettle", as a chip brand should come in these three flavors: Jalapeno, Mesquite Barbecue, Sea Salt and Vinegar.
+ All of the chips and flavors should cost $7.00
+
+ //3.)                            //:Drinks://
+ Same for the drinks do the same thing and make sure to add three additional flavors to each drink brand for example...
+"Zevia", as a drink brand should come in these three flavors: Ginger Ale, Grapefruit Citrus, Lemon Twist.
+"Sparkling Ice", as a drink brand should come in these three flavors: Coconut Pineapple, Peach Nectarine, Fruit Punch.
+"Pepsi", as a drink brand should come in these three flavors: Original, Wild Cherry, Lime.
+ All of the chips and flavors should cost $4.00
+
+No matter the drink option chosen you should always need to choose one out of these three cup size types...
+  "Large", should cost $0.75
+  "Medium, should cost $0.50
+  "Small", should cost $0.25
+
+
+
+                                    //Regular Sandwich//
+• Add Sandwich - the add sandwich screen will walk the user through several options to create the sandwich
+"French Dip Sandwich", "Feta Grilled Sandwich", and the "Butter Burger". All of these regular sandwiches should cost $10.00
+
+                               //Signature Sandwich//
+• Do the exact same thing as the Regular Sandwiches above but make sure to add these three additional signature sandwiches to the mix
+ "Mushroom Melt Smash burger", "Smoked Breakfast Chorizo", and the "Pharaoh BBQ Burger". All of these Signature Sandwiches should cost $15.00
+
+• Each with the option no matter the sandwich chosen to be able too choose one out of these three bread types...
+o Select your bread: "Brioche","French Baguette", and "Ciabatta". All of the bread types should cost $1.50.
+o Sandwich sizes: 4" Should cost $0.50", 8" Should cost $0.75" and 12" Should cost $1.00"
+o Would you like the sandwich toasted?
+
+                              //Toppings//
+• Toppings: - The customer should then be able to add more or remove added toppings to the Regular Sandwiches only if selected.
+The topping selection such as...
+§ Extra Cheese:
+§ Lettuce:
+§ Tomatoes:
+§ Other toppings:
+All of the toppings each should cost $0.50
+
+
+•  Would you like any sauce? if no go to the next screen.
+if yes Select sauces: BBQ, Ranch, Mayo.
+All of the sauces each should cost $0.15
+                                              //Sides//
+o Would you like any sides? if so.
+Fries, Curry Soup, Salad
+All sides should cost $1.20
+
+
+                                              //Drinks//
+• Add Drink - "Zevia", as a drink brand should come in these three flavors: Ginger Ale, Grapefruit Citrus, Lemon Twist.
+              "Sparkling Ice", as a drink brand should come in these three flavors: Coconut Pineapple, Peach Nectarine, Fruit Punch.
+              "Pepsi", as a drink brand should come in these three flavors: Original, Wild Cherry, Lime.
+               All of the Drinks and flavors should cost $4.00
+o Would you like the a drink yes or no?
+               No matter the drink option chosen you should always need to choose one out of these three cup size types...
+                 "Large", should cost $0.75
+                 "Medium, should cost $0.50
+                 "Small", should cost $0.25
+                                               //Chips//
+• Add Chips - "Vitner's", as a chip brand should come in these three flavors: Hot Crunchy Curls, Hot Cheese & Lime, and Extra Cheesy.
+              "Sun Chips", as a chip brand should come in these three flavors: Original, French Onion, Harvest Cheddar.
+              "Clancy's Kettle", as a chip brand should come in these three flavors: Jalapeno, Mesquite Barbecue, Sea Salt and Vinegar.
+               All of the chips and flavors should cost $7.00
+
+                                            //Checkout//
+
+• The Checkout - Should display the order details and the price. on the rect
+o Confirm - create the receipt file and make sure to show the full order that you just placed calculate the whole thing
+and after go back to the home screen.
+o Cancel - delete order and go back to the home screen
+
+----------------------------------------------------------------------------------------------------------------------------------
